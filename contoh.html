@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/contoh.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete="off">
+            <h4>Form Belajar Validation</h4>
+            <div class="input-section">
+                <label>Nama Depan<span class="required-color">*</span></label>
+                <input type="text" placeholder="Nama" id="first-name-input" required />
+                <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Nama Depan Tidak Boleh Kosong</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Jenis Kelamin<span class="required-color">*</span></label>
+                <select type="cekbox" required>Laki-laki</select>
+                <select type="cekbox" required>Laki-laki</select>
+                <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+    >
+    <span id="empty-first-name" class="hide required-color error-message"
+      >Nama Depan Tidak Boleh Kosong</span
+    >
+  </div>
+        <div class="input-section">
+          <label>Nama Belakang<span class="required-color">*</span></label>
+                <input type="text " placeholder="Enter Last Name" id="last-name-input" required />
+                <span id="last-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Nama Belakang Tidak Boleh Kosong
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Email <span class="required-color">*</span></label>
+                <input type="email" placeholder="Enter Email" id="email" required />
+                <span id="email-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Tidak Boleh Kosong</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>No Telepon <span class="required-color">*</span></label>
+                <input type="number" placeholder="Enter Phone Number" id="phone" required />
+                <span id="phone-error" class="hide required-color error-message">Nomor Telepon Harus Memiliki 12 Digit</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            Nomor Telepon Tidak Boleh Kosong
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Password <span class="required-color">*</span></label>
+                <input type="password" placeholder="Enter Password" id="password" required />
+                <span id="password-error" class="hide required-color error-message"> Kata Sandi Harus Memiliki Huruf, Simbol Khusus, Angka, dan Panjang 8 Karakter</span>
+                <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Confirm Password <span class="required-color">*</span></label>
+                <input type="password" id="verify-password" placeholder="Confirm Password" required />
+                <span id="verify-password-error" class="hide required-color error-message">Should Be Same As Previous Password</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span
+          >
+        </div>
+        <button id="submit-button">Signup</button>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="../assets/js/contoh.js"></script>
+  </body>
+</html>
